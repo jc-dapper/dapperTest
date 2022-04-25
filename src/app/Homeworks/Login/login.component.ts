@@ -16,4 +16,8 @@ export class LoginComponent {
     console.log(this.email);
     console.log(this.password);
   }
+
+  redirect(){
+    
+  }
 }

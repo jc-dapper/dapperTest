@@ -4,18 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { LoginComponent } from './Login/login.component';
+import { HttpClientModule } from "@angular/common/http";
+
+import { LoginComponent } from './Homeworks/Login/login.component';
+import { CosumeApiComponent } from './Homeworks/cosume-api/cosume-api.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CosumeApiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
